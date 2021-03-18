@@ -1,0 +1,934 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* COLORS */
+    --bgGreenColor: #CED6CE;
+    --bgOverLay: #FFF6EB;
+    --darkGreen: #746661;
+    --bgColor: #F6E6D2;
+    
+    /* --bgGreenColor: #746661;
+    --bgOverLay: #FCF8F0;
+    --darkGreen: #746662;
+    --bgColor: #F6E6D2; */
+
+}
+
+body {
+    /* background-color: var(--bgOverLay); */
+    /* background-color: #FEFCF9; */
+    background-color: rgb(241, 242, 242,0.6);
+    
+}
+
+.bodyDiv {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #eeedee;
+}
+
+.logoSection {
+    height: 10vh;
+    width: 25vw;
+
+    display: flex;
+    align-items: center;
+}
+.logoSection img {
+    height: 8vh;
+}
+
+.navLinks {
+    height: 10vh;
+    width: 45vw;
+}
+
+.navLinks ul {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.burger {
+    display: none;
+}
+
+.navLinks ul li a{
+    text-decoration: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #5c684b;
+    font-family: sans-serif;
+
+    padding-left: 3em;
+}
+
+.navLinks li:nth-child(1) a {
+    color: #5a8e2a;
+}
+
+.navLinks ul li a:hover {
+    color: #5a8e2a;
+}
+
+#social-media div {
+    display: none;
+}
+
+picture {
+    height: 90vh;
+    width: 100vw;
+
+    position: absolute; 
+    top: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(img/backMassage.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+picture div{
+    height: 90vh;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+picture div h1{
+    /* color: #ffffffd2; */
+    color: rgb(238, 237, 232);
+    font-family: 'Lora', serif;
+    font-size: 5em;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+picture div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5vh);
+
+    height: 8vh;
+    width: 20vw;
+
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+    color: rgba(238, 237, 232, 0.678);
+    background-color: rgb(101, 108, 116);
+    border: none;
+    border-radius: 0.5em;
+}
+picture div a:hover{
+    color: rgb(238, 237, 232);
+    background-color: rgba(101, 108, 116, 0.842);
+}
+
+/* ABOUT SECTION */
+
+
+.aboutSection {
+    height: 70vh;
+    width: 90vw;
+    display: flex;
+}
+
+.pozaProfil {
+    height: 70vh;
+    width: 40vw;
+    background-image: url(img/pozaProfil.webp);
+    background-size: cover;
+}
+
+.aboutSection .aboutMe {
+    height: 70vh;
+    width: 50vw;
+    padding-left: 5vw;
+    background-color: #F1F2F2;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutMe h1 {
+    display: flex;
+
+    color: var(--darkGreen);
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.aboutMe img{
+    width: 15vw;
+    position: relative;
+    right: 8vw;
+}
+
+.aboutMe p{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkGreen);
+    width: 25vw;
+    margin: 0;
+}
+
+.aboutMe p:nth-of-type(1){
+    padding-top: 3vh;
+}
+
+.aboutMe p:nth-of-type(3){
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+
+.serviciiPresentation {
+    height: 100vh;
+    width: 90vw;
+    background-color: rgb(230, 225, 222);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviciiTitle {
+    height: 25vh;
+    width: 60vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviciiTitle h1 {
+    font-family: 'Lora', serif;
+    font-size: 4.3em;
+    margin: 0;
+    transform: translateY(8vh);
+    
+    color: rgb(15, 12, 19);
+}
+
+.serviciiTitle img{
+    width: 0vw;
+}
+
+
+                                /*CAROUSEL */
+
+
+.carousel {
+    height: 70vh;
+    width: 90vw;
+}
+
+.carouselContainer{
+    height: 70vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container-text {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container-text h1{
+    font-size: 2em;
+    font-family: 'Lora', serif;
+    width: 26vw;
+
+    color: rgb(15, 12, 19);
+}
+
+.carousel-container-text p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 6vh;
+    width: 26vw;
+
+    color: rgb(15, 12, 19);
+}
+
+.carousel-container-img {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container-img img{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container-img div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    left: 35vw;
+    top: 50vh;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 10em;
+    
+    background-color: rgb(161, 105, 90);
+}
+
+.carousel-container-img div a{
+    text-decoration: none;
+    color: rgb(238, 237, 232);
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-container-img div:hover {
+    background-color: rgba(161, 105, 95, 0.808);
+
+}
+
+
+
+.aboutBambooMassage {
+    min-height: 70vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutBambooMassage h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 20vh;
+    color: var(--darkGreen);
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.aboutBambooMassage div{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBambooMassage div p{
+    width: 90vw;
+    padding: 2vh;
+
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkGreen);
+    width: 80vw;
+    margin: 0;
+}
+
+.beneficii-masaj {
+    min-height: 100vh;
+    width: 90vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgGreenColor);
+    color: var(--darkGreen);
+}
+
+.beneficii-text {
+    width: 50vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10vh;
+    padding: 2vh;
+
+}
+
+.beneficii-img {
+    height: 50vh;
+    width: 50vh;
+}
+
+.beneficii-img img {
+    height: 48vh;
+}
+
+.beneficii-text h1{
+    color: var(--bgOverLay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 0 0 5vh 0;
+    font-family: 'Lora', serif;
+}
+
+.beneficii-text p {
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
+}
+
+.contact{
+    height: 100vh;
+    width: 90vw;
+    background-color: var(--bgColor);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactTitle {
+    height: 20vh;
+    width: 50vw;
+    position: relative;
+    top: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgGreenColor);
+}
+
+.contactTitle h1 {
+    color: var(--darkGreen);
+    font-family: serif;
+    font-size: 2.5em;
+    margin: 0;
+    border-radius: 5em;
+}
+
+.contactTitle img{
+    width: 15vw;
+}
+
+.contactData {
+    width: 70vw;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: var(--bgOverLay);
+}
+
+.phoneNumber{
+    height: 20vh;
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+    top: 5vh;
+}
+
+.phoneNumber a{
+    width: 40vw;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--darkGreen);
+    font-family: sans-serif;
+    padding: 0 1em;
+}
+.phoneNumber a:nth-child(1){
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-right: solid 2px var(--darkGreen);
+}
+.phoneNumber a:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.contactData p {
+    height: 10vh;
+    font-size: 1em;
+    color: var(--darkGreen);
+    font-family: sans-serif;
+    position: relative;
+    top: 2vh;
+}
+
+.maps iframe{
+    height: 35vh;
+    width: 45vw;
+}
+
+footer {
+    height: 20vh;
+    width: 100vw;
+    background-color: var(--bgGreenColor);
+
+
+    z-index: -1;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+    .serviciiTitle h1{
+        font-size: 3.3em;
+    }
+
+    .carousel-container-text h1{
+        font-size: 1.4em;
+        width: 30vw;
+    }
+
+    .carousel-container-text p{
+        width: 30vw;
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+    .carousel-container-img div a{
+        font-size: 1em;
+    }
+
+
+    .navLinks ul li a {
+        padding-left: 2em;
+    }
+
+    .aboutMe p{
+        width: 40vw;
+    }
+
+    .picture div h1{
+        font-size: 3.6em;
+    }
+    
+
+    
+}
+
+
+
+@media only screen and (max-width: 768px){
+    nav{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        
+    }
+
+    .navLinks  {
+        position: absolute;
+        right: 0px;
+        width: 100vw;
+        height: 90vh;
+        top: 10vh;
+        z-index: 1;
+
+        background-color: #eeedee;
+        transform: translateX(100vw);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navLinks ul {
+        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    .navLinks ul li {
+        margin-top: 10vh;
+        padding-left: 0;
+    }
+    
+    .navLinks ul li a{
+        margin-top: 10vh;
+        padding-left: 0;
+        font-size: 1.3em;
+        opacity: 0;
+    }
+    
+    .burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-right: 12vw;
+
+        height: 5vh;
+        width: 5vw;
+        cursor: pointer;
+        
+    }
+
+    .burger div{
+        background-color: var(--darkGreen);
+        width: 30px;
+        height: 3px;
+        margin: 2px;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+    
+
+
+    .logoSection img {
+        height: 6vh;
+        padding-left: 6vw;
+    }
+
+    #social-media div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(12vh, -8vh);
+    }
+
+    #social-media div img {
+        height: 40px;
+        padding: 0 20px;
+    }
+
+
+
+    picture{
+        width: 100vw;
+    }
+
+    picture div img {
+        height: 0.8em;
+    }
+    picture div h1 {
+        font-size: 2.5em;
+    }
+
+    picture div a{
+        font-size: 1.2em;
+        width: 40vw;
+        height: 6vh;
+    }
+
+    .aboutSection {
+        min-height: 120vh;
+        width: 100vw;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .pozaProfil {
+        width:100vw;
+        height: 50vh;
+    }
+    
+    .aboutSection .aboutMe{
+        width: 100vw;
+        min-height: 70vh;
+        padding-left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aboutSection h1{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 2em;
+    }
+
+    .aboutMe img {
+        position:unset;
+        width: 6em;
+    }
+
+    .aboutSection p{
+        width: 80vw;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .serviciiPresentation {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serviciiPresentation div{
+        width: 100vw;
+    }
+    .serviciiPresentation h1{
+        font-size: 2em;
+        width: 100vw;
+        
+    }
+
+    .serviciiTitle{
+        height: 20vh;
+        text-align: center;
+    }
+
+    .serviciiTitle img {
+        width: 0em;
+    }
+
+
+        /* CAROUSEL */
+
+
+    .carouselContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-container-text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-container-text h1 {
+        width: 76vw;
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .carousel-container-text p {
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+        transform: translateX(5vw);
+    }
+
+    .carousel-container-img {
+        transform: translateY(7vw);
+
+        width: 76vw;
+        height: 40vh;
+        background-image: url(img/backMassage.svg);
+        background-size: cover;
+    }
+
+    .carousel-container-img img{
+        display: none;
+    }
+
+    .carousel-container-img div {
+        position: initial ;
+        width: 40vw;
+        height: 6vh;
+        font-size: 0.8em;
+
+    }
+
+
+    .aboutBambooMassage h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .aboutBambooMassage div{
+        width: 98vw;
+    }
+
+    .aboutBambooMassage div p{
+        font-size: 0.9em;
+        width: 94vw;
+    }
+
+    .beneficii-masaj {
+        width: 100vw;
+    }
+
+    .beneficii-img {
+        display: none;
+    }
+
+    .beneficii-text{
+        margin: 0;
+        width: 94vw;
+    }
+
+    .beneficii-text p {
+        font-size: 0.9em;
+    }
+
+    .beneficii-text h1{
+        font-size: 1.8em;
+        width: 94vw;
+    }
+
+    .contact {
+        width: 100vw;
+    }
+
+    .contactTitle {
+        height: 16vh;
+    }
+ 
+    .contactTitle h1{
+        font-size: 1.4em;
+    }
+
+    .contactTitle img {
+        width: 5em;
+    }
+
+    .phoneNumber{
+        display: block;
+        top:10vh;
+        width: 90vw;
+    }
+
+    .phoneNumber a{
+        font-size: 0.9em;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .phoneNumber a:nth-child(1), .phoneNumber a:nth-child(2){
+        border-right: none;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phoneNumber a:nth-child(2){
+
+    }
+
+    .contactData{
+        width: 90vw;
+    }
+
+    .contactData p{
+        font-size: 0.9em;
+    }
+
+    .maps iframe {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    picture div h1 {
+        font-size: 2.2em;
+    }
+}
+
+
+
+.showNavBar{
+    animation: showNavBar 1s ease-in-out forwards;
+}
+
+.nav-active{
+    transform: translateX(0vw);
+}
+
+.toggle #line1{
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.toggle #line2{
+    opacity: 0;
+}
+
+.toggle #line3{
+    transform: rotate(45deg) translate(-4px, -6px);
+
+}
+
+@keyframes showNavBar{
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
