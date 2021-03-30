@@ -7,17 +7,9 @@
     --bgOverLay: #FFF6EB;
     --darkGreen: #746661;
     --bgColor: #F6E6D2;
-    
-    /* --bgGreenColor: #746661;
-    --bgOverLay: #FCF8F0;
-    --darkGreen: #746662;
-    --bgColor: #F6E6D2; */
-
 }
 
 body {
-    /* background-color: var(--bgOverLay); */
-    /* background-color: #FEFCF9; */
     background-color: rgb(241, 242, 242,0.6);
     
 }
@@ -164,20 +156,22 @@ picture div a:hover{
 
 
 .aboutSection {
-    height: 70vh;
+    min-height: 70vh;
     width: 90vw;
     display: flex;
 }
 
 .pozaProfil {
-    height: 70vh;
+    min-height: 70vh;
     width: 40vw;
-    background-image: url(img/pozaProfil.webp);
+    background-image: url(img/Gabriela.png);
     background-size: cover;
+    background-color: rgb(233, 233, 233);
+
 }
 
 .aboutSection .aboutMe {
-    height: 70vh;
+    min-height: 70vh;
     width: 50vw;
     padding-left: 5vw;
     background-color: #F1F2F2;
@@ -191,11 +185,12 @@ picture div a:hover{
 
 .aboutMe h1 {
     display: flex;
-
+align-items: flex-end;
     color: var(--darkGreen);
     font-family: 'Lora', serif;
     font-size: 2.5em;
-    margin: 0;
+    margin:0;
+    height: 10vh;
 }
 
 .aboutMe img{
@@ -208,7 +203,7 @@ picture div a:hover{
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     color: var(--darkGreen);
-    width: 25vw;
+    width: 40vw;
     margin: 0;
 }
 
@@ -217,8 +212,7 @@ picture div a:hover{
 }
 
 .aboutMe p:nth-of-type(3){
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    margin: 3vh 0;
 }
 
 
@@ -389,24 +383,13 @@ picture div a:hover{
 }
 
 .beneficii-text {
-    width: 50vw;
+    width: 90vw;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 10vh;
-    padding: 2vh;
-
-}
-
-.beneficii-img {
-    height: 50vh;
-    width: 50vh;
-}
-
-.beneficii-img img {
-    height: 48vh;
+    padding: 0 0 0 20vh;
 }
 
 .beneficii-text h1{
@@ -415,115 +398,107 @@ picture div a:hover{
     justify-content: center;
     align-items: center;
     font-size: 3em;
-    margin: 0 0 5vh 0;
+    margin: 6vh 0 4vh 0;
     font-family: 'Lora', serif;
 }
 
 .beneficii-text p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 8px;
+    padding: 4px 0;
 }
 
-.contact{
-    height: 100vh;
+
+.beneficii-text p::before{
+    content: "\2713";
+    padding-right: 5px;
+}
+
+
+    /* CONTACT  */
+
+.contact {
+    min-height: 100vh;
     width: 90vw;
-    background-color: var(--bgColor);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 
-.contactTitle {
+
+.contact-title {
     height: 20vh;
-    width: 50vw;
-    position: relative;
-    top: 5vh;
+    width: 90vw;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: var(--bgGreenColor);
+    align-items: center;
+    flex-direction: column;
 }
 
-.contactTitle h1 {
-    color: var(--darkGreen);
-    font-family: serif;
-    font-size: 2.5em;
+.contact-title h1 {
+    font-size: 3em;
+    padding: 0;
     margin: 0;
-    border-radius: 5em;
 }
 
-.contactTitle img{
-    width: 15vw;
+.contact-title img {
+    width: 20vw;
 }
 
-.contactData {
-    width: 70vw;
-    height: 75vh;
 
+.contact-data {
+    width: 90vw;
+    min-height: 40vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    background-color: var(--bgOverLay);
 }
 
-.phoneNumber{
-    height: 20vh;
-    width: 80vw;
-
+.contacts {
     display: flex;
     justify-content: center;
-    align-items: center ;
-    position: relative;
-    top: 5vh;
-}
+    flex-direction: column;
 
-.phoneNumber a{
-    width: 40vw;
-    text-decoration: none;
-    font-size: 1em;
-    color: var(--darkGreen);
-    font-family: sans-serif;
-    padding: 0 1em;
-}
-.phoneNumber a:nth-child(1){
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    border-right: solid 2px var(--darkGreen);
-}
-.phoneNumber a:nth-child(2){
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-
-.contactData p {
-    height: 10vh;
-    font-size: 1em;
-    color: var(--darkGreen);
-    font-family: sans-serif;
-    position: relative;
-    top: 2vh;
-}
-
-.maps iframe{
-    height: 35vh;
     width: 45vw;
+    height: 50vh;
+    text-align: left;
+    padding-left: 5vh;
+
 }
 
-footer {
-    height: 20vh;
-    width: 100vw;
-    background-color: var(--bgGreenColor);
-
-
-    z-index: -1;
+.contacts p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
 }
+
+.contacts a{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: black;
+    margin: 0.4em 0;
+}
+
+.formular {
+    height: 50vh;
+    width: 45vw;
+    background-image: url(/img/formular.svg);
+    background-size: cover;
+}
+
+
+.maps {
+    height: 40vh;
+    width: 90vw;
+}
+
+.maps iframe {
+    width: 90vw;
+    height: 40vh;
+}
+
 
 
 
@@ -562,7 +537,29 @@ footer {
     .picture div h1{
         font-size: 3.6em;
     }
+
+    .aboutMe p:nth-child(5){
+        font-size: 0.9em;
+    }
+
+    .beneficii-text{
+        margin: 0;
+        width: 90vw;
+        padding: 0 10vh;
+    }
+
+    .beneficii-text p {
+        font-size: 1.2em;
+    }
     
+    .contacts p{
+        font-size: 1em;
+    }
+
+    .contacts a {
+        font-size: 1.2em;
+        margin: 0.1em 0;
+    }
 
     
 }
@@ -688,7 +685,7 @@ footer {
     
     .aboutSection .aboutMe{
         width: 100vw;
-        min-height: 70vh;
+        min-height: 50vh;
         padding-left: 0;
 
         display: flex;
@@ -697,11 +694,13 @@ footer {
         flex-direction: column;
     }
 
+
     .aboutSection h1{
         width: 100vw;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         padding: 0;
+        margin: 0.5em 0 0 0;
         font-size: 2em;
     }
 
@@ -712,8 +711,7 @@ footer {
 
     .aboutSection p{
         width: 80vw;
-        text-align: center;
-        font-size: 1em;
+        text-align: justify;
     }
 
     .serviciiPresentation {
@@ -811,80 +809,95 @@ footer {
         width: 100vw;
     }
 
-    .beneficii-img {
-        display: none;
-    }
-
     .beneficii-text{
         margin: 0;
+        padding: 0;
         width: 94vw;
+        padding-left: 4vh;
     }
 
     .beneficii-text p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .beneficii-text h1{
-        font-size: 1.8em;
-        width: 94vw;
+        font-size: 2em;
+        padding: 0;
+        margin: 4vh 0 4vh 0;
     }
+
+
+    /* CONTACT */
 
     .contact {
         width: 100vw;
     }
 
-    .contactTitle {
-        height: 16vh;
-    }
- 
-    .contactTitle h1{
-        font-size: 1.4em;
+    .contact-title {
+        height: 15vh;
     }
 
-    .contactTitle img {
-        width: 5em;
+    .contact-title h1 {
+        font-size: 2em;
     }
 
-    .phoneNumber{
-        display: block;
-        top:10vh;
-        width: 90vw;
+    .contact-title img {
+        width: 30vh;
     }
 
-    .phoneNumber a{
-        font-size: 0.9em;
-        width: 90vw;
-        text-align: center;
+    .contact-data {
+        flex-direction: column;
+        width: 100vw;
     }
 
-    .phoneNumber a:nth-child(1), .phoneNumber a:nth-child(2){
-        border-right: none;
-        display: block;
-        justify-content: center;
+    .contacts {
+        width: 100vw;
+        height: 35vh;
+        padding: 0;
         align-items: center;
-    }
-
-    .phoneNumber a:nth-child(2){
-
-    }
-
-    .contactData{
-        width: 90vw;
-    }
-
-    .contactData p{
         font-size: 0.9em;
     }
 
-    .maps iframe {
-        width: 80vw;
+    .formular {
+        width: 100vw;
     }
+
+    .contacts p, .contacts a {
+        font-size: 1em;
+    }
+
+    .maps, .maps iframe {
+        width: 100vw;
+    }
+
+
+
+
+
+
 }
 
 @media only screen and (max-width: 380px){
+
+    
     picture div h1 {
         font-size: 2.2em;
     }
+
+    .aboutMe p:nth-child(3){
+        font-size: 0.9em;
+    }
+
+    .beneficii-text h1 {
+        font-size: 1.6em;
+    }
+
+    .beneficii-text p {
+        font-size: 0.9em;
+        padding: 1vh 0;
+        margin: 0;
+    }
+
 }
 
 
@@ -907,7 +920,7 @@ footer {
 
 .toggle #line3{
     transform: rotate(45deg) translate(-4px, -6px);
-
+    
 }
 
 @keyframes showNavBar{
