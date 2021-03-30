@@ -7,6 +7,14 @@
     --bgColor: #F6E6D2;
 }
 
+h1 {
+    font-family: 'Lora', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .container {
     overflow-x: hidden;
@@ -26,6 +34,9 @@ header {
 
 }
 
+body {
+    background-color: #f1f2f299;
+}
 
 
 nav {
@@ -86,12 +97,133 @@ nav {
     display: none;
 }
 
+header picture {
+    height: 90vh;
+    width: 100vw;
+    background-image: url(img/backMassage.svg);
+    background-size: cover;
+}
+
+header picture p {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5.4em;
+    color: #eeede8;
+}
+
+
+
+
+/* LISTA PRETURI */
+            
+section {
+    min-height: 100vh;
+    width: 80vw;
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pret {
+    font-size: 4em;
+    height: 20vh;
+    width: 60vw;
+    display: flex;
+    font-family: 'Lora', serif;
+
+}
+
+.preturi {
+    width: 80vw;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.preturi hr {
+    background-color: #9ec568;
+    height: 0.1em;
+    border: none;
+    width: 60vw;
+}
+
+.preturi h1 {
+    font-size: 2.2em;
+    text-align: start;
+    font-weight: 500;
+}
+
+.preturi p {
+    font-size: 2em;
+    width: 60vw;
+    text-align: end;
+    margin: 0 0 2vh 0;
+}
+
+.preturi div {
+    margin: 2vh 0;
+}
+
+.preturi div:hover p,.preturi div:hover h1 {
+    color: #067206
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1024px){
     .navLinks ul li a {
         padding-left: 2em;
     }
+
+    section {
+        width: 90vw;
+    }
+
+    .preturi {
+        width: 90vw;
+    }
+
+    .preturi h1 {
+        font-size: 1.8em;
+    }
+
+    .preturi p {
+        font-size: 1.6em;
+        width: 70vw;
+    }
+
+    .preturi div {
+        width: 80vw;
+    }
+
+    .preturi hr {
+        width: 70vw;
+    }
+
+    .pret {
+        width: 80vw;
+    }
+
+    header picture p {
+        font-size: 4em
+    }
+
 }
 
 
@@ -185,6 +317,87 @@ nav {
         padding: 0 20px;
     }
 
+
+    section {
+        width: 90vw;
+    }
+
+    .pret{
+        font-size: 3em;
+        width: 90vw;
+        height: 10vh;
+        padding-bottom: 4vh;
+    }
+
+    .preturi {
+        width: 90vw;
+    }
+
+    .preturi h1 {
+        font-size: 1.6em;
+    }
+
+    .preturi p {
+        font-size: 1.4em;
+        width: 80vw;
+    }
+
+    .preturi div {
+        width: 80vw;
+    }
+
+    .preturi hr {
+        width: 80vw;
+    }
+
+    header picture p {
+        font-size: 3em;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 380px){
+
+    header picture p {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    section {
+        width: 96vw;
+    }
+
+    .pret{
+        font-size: 2em;
+        width: 80vw;
+        height: 10vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .preturi {
+        width: 90vw;
+    }
+
+    .preturi h1 {
+        font-size: 1.3em;
+    }
+
+    .preturi p {
+        font-size: 1em;
+        width: 90vw;
+        text-align: start;
+        margin-top: 10px;
+    }
+
+    .preturi div {
+        width: 80vw;
+    }
+
+    .preturi hr {
+        width: 80vw;
+    }
 }
 
 
