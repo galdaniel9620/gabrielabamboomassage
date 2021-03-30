@@ -131,7 +131,7 @@ section {
 .pret {
     font-size: 4em;
     height: 20vh;
-    width: 60vw;
+    width: 70vw;
     display: flex;
     font-family: 'Lora', serif;
 
@@ -149,7 +149,7 @@ section {
     background-color: #9ec568;
     height: 0.1em;
     border: none;
-    width: 60vw;
+    width: 70vw;
 }
 
 .preturi h1 {
@@ -160,7 +160,7 @@ section {
 
 .preturi p {
     font-size: 2em;
-    width: 60vw;
+    width: 70vw;
     text-align: end;
     margin: 0 0 2vh 0;
 }
@@ -205,7 +205,7 @@ section {
 
     .preturi p {
         font-size: 1.6em;
-        width: 70vw;
+        width: 80vw;
     }
 
     .preturi div {
@@ -213,11 +213,13 @@ section {
     }
 
     .preturi hr {
-        width: 70vw;
+        width: 80vw;
     }
 
     .pret {
         width: 80vw;
+        font-size: 3.5em;
+        height: 12vh;
     }
 
     header picture p {
@@ -323,8 +325,8 @@ section {
     }
 
     .pret{
-        font-size: 3em;
-        width: 90vw;
+        font-size: 2.8em;
+        width: 80vw;
         height: 10vh;
         padding-bottom: 4vh;
     }
@@ -381,11 +383,11 @@ section {
     }
 
     .preturi h1 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .preturi p {
-        font-size: 1em;
+        font-size: 0.8em;
         width: 90vw;
         text-align: start;
         margin-top: 10px;
