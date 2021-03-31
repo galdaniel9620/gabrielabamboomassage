@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(241, 242, 242,0.6);
+    background-color: #f1f2f299;
     
 }
 
@@ -101,7 +101,7 @@ picture {
     align-items: center;
     justify-content: center;
 
-    background-image: url(img/backMassage.svg);
+    background-image: url(img/backmassagebg.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -118,8 +118,7 @@ picture div{
 }
 
 picture div h1{
-    /* color: #ffffffd2; */
-    color: rgb(238, 237, 232);
+    color: #eeede8;
     font-family: 'Lora', serif;
     font-size: 5em;
     width: 80vw;
@@ -166,7 +165,7 @@ picture div a:hover{
     width: 40vw;
     background-image: url(img/Gabriela.png);
     background-size: cover;
-    background-color: rgb(233, 233, 233);
+    background-color: #F1F2F2;
 
 }
 
@@ -219,7 +218,7 @@ align-items: flex-end;
 .serviciiPresentation {
     height: 100vh;
     width: 90vw;
-    background-color: rgb(230, 225, 222);
+    background-color: #e6e1de;
     
     display: flex;
     flex-direction: column;
@@ -315,18 +314,18 @@ align-items: flex-end;
     height: 10vh;
     border-radius: 10em;
     
-    background-color: rgb(161, 105, 90);
+    background-color: #a1695a;
 }
 
 .carousel-container-img div a{
     text-decoration: none;
-    color: rgb(238, 237, 232);
+    color: #eeede8;
     font-size: 1.6em;
     font-family: 'Roboto', sans-serif;
 }
 
 .carousel-container-img div:hover {
-    background-color: rgba(161, 105, 95, 0.808);
+    background-color: #a1695fce;
 
 }
 
@@ -374,11 +373,12 @@ align-items: flex-end;
 .beneficii-masaj {
     min-height: 100vh;
     width: 90vw;
-    
+    border-radius: 0 0 1em 1em;    
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bgGreenColor);
+    background-size: cover;
     color: var(--darkGreen);
 }
 
@@ -419,7 +419,7 @@ align-items: flex-end;
     /* CONTACT  */
 
 .contact {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 90vw;
 
     display: flex;
@@ -430,7 +430,7 @@ align-items: flex-end;
 
 
 .contact-title {
-    height: 20vh;
+    height: 30vh;
     width: 90vw;
 
     display: flex;
@@ -443,6 +443,8 @@ align-items: flex-end;
     font-size: 3em;
     padding: 0;
     margin: 0;
+    color: #746661;
+    font-family: 'Lora', serif;
 }
 
 .contact-title img {
@@ -462,41 +464,80 @@ align-items: flex-end;
     flex-direction: column;
 
     width: 45vw;
-    height: 50vh;
+    height: 40vh;
     text-align: left;
-    padding-left: 5vh;
+    padding-left: 15vh;
 
 }
 
-.contacts p {
-    margin: 0;
-    padding: 0;
-    font-size: 1.3em;
+.phone-number{
+    display: flex;
+    height: 10vh;
 }
 
-.contacts a{
-    font-size: 1.6em;
-    text-decoration: none;
+
+.phone-number img {
+    height: 5vh;
     color: black;
-    margin: 0.4em 0;
 }
 
-.formular {
-    height: 50vh;
-    width: 45vw;
-    background-image: url(/img/formular.svg);
-    background-size: cover;
+.phone-number a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #746661;
+    margin-left: 1vw;
+    padding-left: 0.5vw;
+    font-family: 'Lora', serif;
 }
+
+.mail {
+    display: flex;
+    height: 10vh;
+}
+
+.mail img {
+    height: 6vh;
+}
+
+.mail a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #746661;
+    margin-left: 1vw;
+    transform: translateY(0.5vh);
+    font-family: 'Lora', serif;
+}
+
+.location {
+    display: flex;
+    height: 10vh;
+}
+
+.location img {
+    height: 6vh;
+}
+
+.location p {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #746661;
+    margin-left: 1vw;
+    transform: translateY(1vh);
+    font-family: 'Lora', serif;
+}
+
 
 
 .maps {
     height: 40vh;
-    width: 90vw;
+    width: 50vw;
+    text-align: center;
 }
 
 .maps iframe {
-    width: 90vw;
-    height: 40vh;
+    width: 40vw;
+    height: 36vh;
+    border-radius: 1em;
 }
 
 
@@ -551,15 +592,11 @@ align-items: flex-end;
     .beneficii-text p {
         font-size: 1.2em;
     }
-    
-    .contacts p{
-        font-size: 1em;
-    }
 
-    .contacts a {
-        font-size: 1.2em;
-        margin: 0.1em 0;
+    .contacts {
+        padding-left: 5vh;
     }
+    
 
     
 }
@@ -679,6 +716,7 @@ align-items: flex-end;
     }
 
     .pozaProfil {
+        background-color: rgb(237, 235, 233);
         width:100vw;
         height: 50vh;
     }
@@ -807,6 +845,7 @@ align-items: flex-end;
 
     .beneficii-masaj {
         width: 100vw;
+        border-radius: 0;
     }
 
     .beneficii-text{
@@ -853,22 +892,20 @@ align-items: flex-end;
     .contacts {
         width: 100vw;
         height: 35vh;
-        padding: 0;
-        align-items: center;
         font-size: 0.9em;
+        padding-left: 6vh;
     }
 
-    .formular {
+
+    .maps {
         width: 100vw;
     }
 
-    .contacts p, .contacts a {
-        font-size: 1em;
+    .maps iframe {
+        width: 86vw;
     }
 
-    .maps, .maps iframe {
-        width: 100vw;
-    }
+
 
 
 
@@ -896,6 +933,11 @@ align-items: flex-end;
         font-size: 0.9em;
         padding: 1vh 0;
         margin: 0;
+    }
+
+    .contacts a, .contacts p {
+        font-size: 1.1em;
+        padding-left: 10px;
     }
 
 }
