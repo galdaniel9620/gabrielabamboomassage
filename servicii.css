@@ -9,10 +9,12 @@
 
 h1 {
     font-family: 'Lora', serif;
+    color: #746661;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    color: #746661;
 }
 
 
@@ -81,7 +83,6 @@ nav {
     text-transform: uppercase;
     color: #5c684b;
     font-family: sans-serif;
-
     padding-left: 3em;
 }
 
@@ -100,8 +101,9 @@ nav {
 header picture {
     height: 90vh;
     width: 100vw;
-    background-image: url(img/backMassage.svg);
+    background-image: url(img/servicii.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header picture p {
@@ -109,6 +111,7 @@ header picture p {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lora', serif;
 
     font-size: 5.4em;
     color: #eeede8;
@@ -170,7 +173,7 @@ section {
 }
 
 .preturi div:hover p,.preturi div:hover h1 {
-    color: #067206
+    color: #9ec568
 }
 
 
