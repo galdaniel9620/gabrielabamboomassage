@@ -1,989 +1,308 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    /* COLORS */
-    --bgGreenColor: #CED6CE;
-    --bgOverLay: #FFF6EB;
-    --darkGreen: #746661;
-    --bgColor: #F6E6D2;
-}
-
-body {
-    background-color: #f1f2f299;
-    
-}
-
-.bodyDiv {
-    overflow-x: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-nav {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: #eeedee;
-}
-
-.logoSection {
-    height: 10vh;
-    width: 25vw;
-
-    display: flex;
-    align-items: center;
-}
-.logoSection img {
-    height: 8vh;
-}
-
-.navLinks {
-    height: 10vh;
-    width: 45vw;
-}
-
-.navLinks ul {
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-}
-
-.burger {
-    display: none;
-}
-
-.navLinks ul li a{
-    text-decoration: none;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    color: #5c684b;
-    font-family: sans-serif;
-
-    padding-left: 3em;
-}
-
-.navLinks li:nth-child(1) a {
-    color: #5a8e2a;
-}
-
-.navLinks ul li a:hover {
-    color: #5a8e2a;
-}
-
-#social-media div {
-    display: none;
-}
-
-picture {
-    height: 90vh;
-    width: 100vw;
-
-    position: absolute; 
-    top: 10vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-image: url(img/backmassagebg.png);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-picture div{
-    height: 90vh;
-    width: 80vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-picture div h1{
-    color: #eeede8;
-    font-family: 'Lora', serif;
-    font-size: 5em;
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-
-}
-
-
-picture div a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(5vh);
-
-    height: 8vh;
-    width: 20vw;
-
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-
-    color: rgba(238, 237, 232, 0.678);
-    background-color: rgb(101, 108, 116);
-    border: none;
-    border-radius: 0.5em;
-}
-picture div a:hover{
-    color: rgb(238, 237, 232);
-    background-color: rgba(101, 108, 116, 0.842);
-}
-
-/* ABOUT SECTION */
-
-
-.aboutSection {
-    min-height: 70vh;
-    width: 90vw;
-    display: flex;
-}
-
-.pozaProfil {
-    min-height: 70vh;
-    width: 40vw;
-    background-image: url(img/Gabriela.png);
-    background-size: cover;
-    background-color: #F1F2F2;
-
-}
-
-.aboutSection .aboutMe {
-    min-height: 70vh;
-    width: 50vw;
-    padding-left: 5vw;
-    background-color: #F1F2F2;
-}
-
-.aboutMe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.aboutMe h1 {
-    display: flex;
-align-items: flex-end;
-    color: var(--darkGreen);
-    font-family: 'Lora', serif;
-    font-size: 2.5em;
-    margin:0;
-    height: 10vh;
-}
-
-.aboutMe img{
-    width: 15vw;
-    position: relative;
-    right: 8vw;
-}
-
-.aboutMe p{
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    color: var(--darkGreen);
-    width: 40vw;
-    margin: 0;
-}
-
-.aboutMe p:nth-of-type(1){
-    padding-top: 3vh;
-}
-
-.aboutMe p:nth-of-type(3){
-    margin: 3vh 0;
-}
-
-
-.serviciiPresentation {
-    height: 100vh;
-    width: 90vw;
-    background-color: #e6e1de;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.serviciiTitle {
-    height: 25vh;
-    width: 60vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.serviciiTitle h1 {
-    font-family: 'Lora', serif;
-    font-size: 4.3em;
-    margin: 0;
-    transform: translateY(8vh);
-    
-    color: rgb(15, 12, 19);
-}
-
-.serviciiTitle img{
-    width: 0vw;
-}
-
-
-                                /*CAROUSEL */
-
-
-.carousel {
-    height: 70vh;
-    width: 90vw;
-}
-
-.carouselContainer{
-    height: 70vh;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-container-text {
-    width: 40vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-container-text h1{
-    font-size: 2em;
-    font-family: 'Lora', serif;
-    width: 26vw;
-
-    color: rgb(15, 12, 19);
-}
-
-.carousel-container-text p{
-    font-family: 'Roboto', sans-serif;
-    margin-top: 6vh;
-    width: 26vw;
-
-    color: rgb(15, 12, 19);
-}
-
-.carousel-container-img {
-    width: 40vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-container-img img{
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-container-img div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; 
-    left: 35vw;
-    top: 50vh;
-    width: 20vw;
-    height: 10vh;
-    border-radius: 10em;
-    
-    background-color: #a1695a;
-}
-
-.carousel-container-img div a{
-    text-decoration: none;
-    color: #eeede8;
-    font-size: 1.6em;
-    font-family: 'Roboto', sans-serif;
-}
-
-.carousel-container-img div:hover {
-    background-color: #a1695fce;
-
-}
-
-
-
-.aboutBambooMassage {
-    min-height: 70vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.aboutBambooMassage h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 20vh;
-    color: var(--darkGreen);
-    font-family: 'Lora', serif;
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.aboutBambooMassage div{
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutBambooMassage div p{
-    width: 90vw;
-    padding: 2vh;
-
-    font-size: 1.1em;
-    font-family: 'Roboto', sans-serif;
-    color: var(--darkGreen);
-    width: 80vw;
-    margin: 0;
-}
-
-.beneficii-masaj {
-    min-height: 100vh;
-    width: 90vw;
-    border-radius: 0 0 1em 1em;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bgGreenColor);
-    background-size: cover;
-    color: var(--darkGreen);
-}
-
-.beneficii-text {
-    width: 90vw;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 0 0 20vh;
-}
-
-.beneficii-text h1{
-    color: var(--bgOverLay);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    margin: 6vh 0 4vh 0;
-    font-family: 'Lora', serif;
-}
-
-.beneficii-text p {
-    font-size: 1.4em;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 8px;
-    padding: 4px 0;
-}
-
-
-.beneficii-text p::before{
-    content: "\2713";
-    padding-right: 5px;
-}
-
-
-    /* CONTACT  */
-
-.contact {
-    min-height: 50vh;
-    width: 90vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-}
-
-
-.contact-title {
-    height: 30vh;
-    width: 90vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact-title h1 {
-    font-size: 3em;
-    padding: 0;
-    margin: 0;
-    color: #746661;
-    font-family: 'Lora', serif;
-}
-
-.contact-title img {
-    width: 20vw;
-}
-
-
-.contact-data {
-    width: 90vw;
-    min-height: 40vh;
-    display: flex;
-}
-
-.contacts {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    width: 45vw;
-    height: 40vh;
-    text-align: left;
-    padding-left: 15vh;
-
-}
-
-.phone-number{
-    display: flex;
-    height: 10vh;
-}
-
-
-.phone-number img {
-    height: 5vh;
-    color: black;
-}
-
-.phone-number a {
-    font-size: 1.4em;
-    text-decoration: none;
-    color: #746661;
-    margin-left: 1vw;
-    padding-left: 0.5vw;
-    font-family: 'Lora', serif;
-}
-
-.mail {
-    display: flex;
-    height: 10vh;
-}
-
-.mail img {
-    height: 6vh;
-}
-
-.mail a{
-    font-size: 1.4em;
-    text-decoration: none;
-    color: #746661;
-    margin-left: 1vw;
-    transform: translateY(0.5vh);
-    font-family: 'Lora', serif;
-}
-
-.location {
-    display: flex;
-    height: 10vh;
-}
-
-.location img {
-    height: 6vh;
-}
-
-.location p {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #746661;
-    margin-left: 1vw;
-    transform: translateY(1vh);
-    font-family: 'Lora', serif;
-}
-
-
-
-.maps {
-    height: 40vh;
-    width: 50vw;
-    text-align: center;
-}
-
-.maps iframe {
-    width: 40vw;
-    height: 36vh;
-    border-radius: 1em;
-}
-
-
-
-
-
-
-@media only screen and (max-width: 1024px){
-
-    .serviciiTitle h1{
-        font-size: 3.3em;
-    }
-
-    .carousel-container-text h1{
-        font-size: 1.4em;
-        width: 30vw;
-    }
-
-    .carousel-container-text p{
-        width: 30vw;
-        margin: 0;
-        font-size: 0.9em;
-    }
-
-    .carousel-container-img div a{
-        font-size: 1em;
-    }
-
-
-    .navLinks ul li a {
-        padding-left: 2em;
-    }
-
-    .aboutMe p{
-        width: 40vw;
-    }
-
-    .picture div h1{
-        font-size: 3.6em;
-    }
-
-    .aboutMe p:nth-child(5){
-        font-size: 0.9em;
-    }
-
-    .beneficii-text{
-        margin: 0;
-        width: 90vw;
-        padding: 0 10vh;
-    }
-
-    .beneficii-text p {
-        font-size: 1.2em;
-    }
-
-    .contacts {
-        padding-left: 5vh;
-    }
-    
-
-    
-}
-
-
-
-@media only screen and (max-width: 768px){
-    nav{
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 10vh;
-        
-    }
-
-    .navLinks  {
-        position: absolute;
-        right: 0px;
-        width: 100vw;
-        height: 90vh;
-        top: 10vh;
-        z-index: 1;
-
-        background-color: #eeedee;
-        transform: translateX(100vw);
-        transition: transform 0.5s ease-in;
-    }
-
-    .navLinks ul {
-        height: 40vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 0;
-        margin: 0;
-    }
-    
-    .navLinks ul li {
-        margin-top: 10vh;
-        padding-left: 0;
-    }
-    
-    .navLinks ul li a{
-        margin-top: 10vh;
-        padding-left: 0;
-        font-size: 1.3em;
-        opacity: 0;
-    }
-    
-    .burger{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        margin-right: 12vw;
-
-        height: 5vh;
-        width: 5vw;
-        cursor: pointer;
-        
-    }
-
-    .burger div{
-        background-color: var(--darkGreen);
-        width: 30px;
-        height: 3px;
-        margin: 2px;
-        border-radius: 15px;
-        transition: all 0.3s ease;
-    }
-    
-
-
-    .logoSection img {
-        height: 6vh;
-        padding-left: 6vw;
-    }
-
-    #social-media div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translate(12vh, -8vh);
-    }
-
-    #social-media div img {
-        height: 40px;
-        padding: 0 20px;
-    }
-
-
-
-    picture{
-        width: 100vw;
-    }
-
-    picture div img {
-        height: 0.8em;
-    }
-    picture div h1 {
-        font-size: 2.5em;
-    }
-
-    picture div a{
-        font-size: 1.2em;
-        width: 40vw;
-        height: 6vh;
-    }
-
-    .aboutSection {
-        min-height: 120vh;
-        width: 100vw;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .pozaProfil {
-        background-color: rgb(237, 235, 233);
-        width:100vw;
-        height: 50vh;
-    }
-    
-    .aboutSection .aboutMe{
-        width: 100vw;
-        min-height: 50vh;
-        padding-left: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-
-    .aboutSection h1{
-        width: 100vw;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 0;
-        margin: 0.5em 0 0 0;
-        font-size: 2em;
-    }
-
-    .aboutMe img {
-        position:unset;
-        width: 6em;
-    }
-
-    .aboutSection p{
-        width: 80vw;
-        text-align: justify;
-    }
-
-    .serviciiPresentation {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .serviciiPresentation div{
-        width: 100vw;
-    }
-    .serviciiPresentation h1{
-        font-size: 2em;
-        width: 100vw;
-        
-    }
-
-    .serviciiTitle{
-        height: 20vh;
-        text-align: center;
-    }
-
-    .serviciiTitle img {
-        width: 0em;
-    }
-
-
-        /* CAROUSEL */
-
-
-    .carouselContainer{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .carousel-container-text {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .carousel-container-text h1 {
-        width: 76vw;
-        font-size: 1.3em;
-        text-align: center;
-        margin-bottom: 5vh;
-    }
-
-    .carousel-container-text p {
-        width: 70vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.8em;
-        transform: translateX(5vw);
-    }
-
-    .carousel-container-img {
-        transform: translateY(7vw);
-
-        width: 76vw;
-        height: 40vh;
-        background-image: url(img/backMassage.svg);
-        background-size: cover;
-    }
-
-    .carousel-container-img img{
-        display: none;
-    }
-
-    .carousel-container-img div {
-        position: initial ;
-        width: 40vw;
-        height: 6vh;
-        font-size: 0.8em;
-
-    }
-
-
-    .aboutBambooMassage h1 {
-        font-size: 1.8em;
-        text-align: center;
-    }
-
-    .aboutBambooMassage div{
-        width: 98vw;
-    }
-
-    .aboutBambooMassage div p{
-        font-size: 0.9em;
-        width: 94vw;
-    }
-
-    .beneficii-masaj {
-        width: 100vw;
-        border-radius: 0;
-    }
-
-    .beneficii-text{
-        margin: 0;
-        padding: 0;
-        width: 94vw;
-        padding-left: 4vh;
-    }
-
-    .beneficii-text p {
-        font-size: 1em;
-    }
-
-    .beneficii-text h1{
-        font-size: 2em;
-        padding: 0;
-        margin: 4vh 0 4vh 0;
-    }
-
-
-    /* CONTACT */
-
-    .contact {
-        width: 100vw;
-    }
-
-    .contact-title {
-        height: 15vh;
-    }
-
-    .contact-title h1 {
-        font-size: 2em;
-    }
-
-    .contact-title img {
-        width: 30vh;
-    }
-
-    .contact-data {
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .contacts {
-        width: 100vw;
-        height: 35vh;
-        font-size: 0.9em;
-        padding-left: 6vh;
-    }
-
-
-    .maps {
-        width: 100vw;
-    }
-
-    .maps iframe {
-        width: 86vw;
-    }
-
-
-
-
-
-
-
-
-}
-
-@media only screen and (max-width: 380px){
-
-    
-    picture div h1 {
-        font-size: 2.2em;
-    }
-
-    .aboutMe p:nth-child(3){
-        font-size: 0.9em;
-    }
-
-    .beneficii-text h1 {
-        font-size: 1.6em;
-    }
-
-    .beneficii-text p {
-        font-size: 0.9em;
-        padding: 1vh 0;
-        margin: 0;
-    }
-
-    .contacts a, .contacts p {
-        font-size: 1.1em;
-        padding-left: 10px;
-    }
-
-}
-
-
-
-.showNavBar{
-    animation: showNavBar 1s ease-in-out forwards;
-}
-
-.nav-active{
-    transform: translateX(0vw);
-}
-
-.toggle #line1{
-    transform: rotate(-45deg) translate(-4px, 6px);
-}
-
-.toggle #line2{
-    opacity: 0;
-}
-
-.toggle #line3{
-    transform: rotate(45deg) translate(-4px, -6px);
-    
-}
-
-@keyframes showNavBar{
-    from {
-        transform: translateX(100vw);
-    }
-
-    to {
-        transform: translateX(0vw);
-    }
-}
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabrielaBambooMassage</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+
+</head>
+<body>
+    <div class="bodyDiv">
+    <header>
+        <nav>
+            <div class="logoSection" >
+                <img src="img/logo.svg" alt="">
+            </div>
+
+            <div class="navLinks">
+                <ul>
+                    <li ><a href="index.html">Acasa</a></li>
+                    <li><a href="#about-me">Despre</a></li>
+                    <li><a href="servicii.html">Servicii</a></li>
+                    <li><a href=" #contact">contact</a></li>
+                    <li id="social-media">
+                        <div>
+                            <a href=""><img src="img/facebook.png" alt=""></a>
+                            <a href=""><img src="img/instagram.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+
+            <div class="burger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+
+        </nav>
+
+        <picture>
+            <div>
+                <h1>
+                    Relax the Mind <br>
+                    Renew the Body <br>
+                    Revive the Soul
+                </h1>
+                <a href="servicii.html">Servicii</a>
+            </div>
+        </picture>
+    </header>
+
+    <div class="aboutSection">
+        <div class="pictureAboutSection">
+           <div class="pozaProfil"></div>
+        </div>
+
+        <div class="aboutMe" id="about-me">
+            <h1 data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Despre</h1>
+            <img src="/img/line.svg" alt="" data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">
+
+            <p  data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">Gal Gabriela</p>
+            <p data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">Tehnician maseur</p>
+
+            <p data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">Din 2018 sunt tehnician maseur  specializată pe diverse tipuri de masaj. Dintotdeauna mi-a plăcut să ajut. Îmi place ce fac și consider că este una dintre cele mai complexe meserii. Îmbină frumos tot ce mi-am propus atât din punct de vedere profesional cât și uman.Practic cu multă plăcere această meserie,iar scopul meu este acela de a mă dezvolta și perfecționa într-o manieră continuă pentru a putea oferi cât mai mult oamenilor ce solicită ajutorul meu.</p>
+        </div>
+    </div>
+
+    <div class="serviciiPresentation">
+        <div class="serviciiTitle">
+            <h1>Terapie prin masaj</h1>
+            <img src="img/line.svg" alt="">
+        </div>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="carouselContainer">
+
+                      <div class="carousel-container-text">
+                          <h1>Maderoterapie</h1>
+                          <p>Tehnica de masaj care echivalează cu o oră de sală!</p>
+                      </div>
+
+                      <div class="carousel-container-img">
+                        <img src="img/backMassage.jpg" alt="">
+                        <div>
+                            <a href="servicii.html">Descopera oferta</a>
+                        </div>
+                      </div>
+                   
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="carouselContainer">
+                   
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>30 min</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carouselContainer">
+                   
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam molestias exercitationem, repudiandae sapiente excepturi asperiores id nemo magni magnam rerum, illo, veritatis ex nulla! Velit repellendus dicta officiis ipsam!</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carouselContainer">
+                    
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam molestias exercitationem, repudiandae sapiente excepturi asperiores id nemo magni magnam rerum, illo, veritatis ex nulla! Velit repellendus dicta officiis ipsam!</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carouselContainer">
+                   
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam molestias exercitationem, repudiandae sapiente excepturi asperiores id nemo magni magnam rerum, illo, veritatis ex nulla! Velit repellendus dicta officiis ipsam!</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carouselContainer">
+                   
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam molestias exercitationem, repudiandae sapiente excepturi asperiores id nemo magni magnam rerum, illo, veritatis ex nulla! Velit repellendus dicta officiis ipsam!</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carouselContainer">
+                   
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam molestias exercitationem, repudiandae sapiente excepturi asperiores id nemo magni magnam rerum, illo, veritatis ex nulla! Velit repellendus dicta officiis ipsam!</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carouselContainer">
+                    
+                    <div class="carousel-container-text">
+                        <h1>Maderoterapie si masaj cu bete de bambus</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam molestias exercitationem, repudiandae sapiente excepturi asperiores id nemo magni magnam rerum, illo, veritatis ex nulla! Velit repellendus dicta officiis ipsam!</p>
+                    </div>
+
+                    <div class="carousel-container-img">
+                      <img src="img/backMassage.jpg" alt="">
+                      <div>
+                          <a href="servicii.html">Descopera oferta</a>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="aboutBambooMassage">
+        <h1 data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">CE ESTE MADEROTERAPIA?</h1>
+        <div>
+            <p data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">Maderoterapia cunoscuta si sub denumirea de Woodsculpting sau Woodtherapy a aparut in America de Sud ca o terapie holistica ce reuseste sa stimuleze si sa echilibreze energia, sa reduca nivelul de stres din organism si sa atenueze durerea musculară si articulara.</p>
+
+            <p data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">Maderoterapia asa cum indica si numele acesteia, madero insemnand material lemnos, este o tehnica  de masaj prin care se folosesc diferite instrumente din lemn de diverse forme si dimensiuni special concepute pentru a echilibra energia corpului,  pentru a readuce fermitatea si tonifierea tesuturilor si pentru a combate celulita.</p>
+
+            <p data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">Maderoterapia este o terapie eficienta de conturare a corpului fara efort si fara a afecta pielea sau tesutul. Fiecare instrument din lemn are o utilizare specifica pentru o anumita zona a corpului.Acest tratament ajula la combaterea <span >celulitei</span> lasand pielea fina si catifelata.</p>
+        </div>
+    </div>
+
+    <div class="beneficii-masaj" >
+        <div class="beneficii-text">
+            <h1 data-aos="fade-left" data-aos-offset="80" data-aos-duration="500">BENEFICIILE MADEROTERAPIEI</h1>
+
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Imbunatateste circulatia arteriala, creste fluxul sângelui.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Regleaza circulatia limfatica, creste drenajul si accelereaza detoxifierea organismului.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Fermitate, tonifiere, este stimulata productia de colagen si elastina.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Stimuleaza lipoliza, reducandu-se astfel acumularile de grasime localizata.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Regleaza sistemul nervos si  echilibreaza mintea.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Imbunatateste tonusul muscular si creste performantele fizice.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Lasa pielea fina si dispare aspectul de coaja de portocala ,elimina celulita.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Echilibreaza centrele energetice ale corpului.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Imbunatateste respiratia.</p>
+            <p data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">Produce o senzatie de bine ,de relaxare.</p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-title">
+            <h1>Contact Me</h1>
+            <img src="img/line.svg" alt="">
+        </div>
+
+        <div class="contact-data">
+            <div class="contacts">
+                <div class="phone-number">
+                    <img src="img/phone.svg">
+                    <a href="tel:123-456-7890">0758 564 444</a>
+                </div>
+
+                <div class="mail">
+                    <img src="img/gmail.svg">
+                    <a href="">adresamail@gmail.com</a>
+                </div>
+
+                <div class="location">
+                    <img src="img/location.svg">
+                    <p>Salon Rash,Strada Fagului 6, Oradea</p>
+                </div>
+            </div>
+
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10870.038333477065!2d21.9161382!3d47.0694698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0782e23e2a13989!2sRash!5e0!3m2!1sen!2sro!4v1614322082643!5m2!1sen!2sro" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+            
+    </footer>
+    </div>
+</body>
+</html>
