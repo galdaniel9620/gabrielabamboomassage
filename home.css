@@ -135,20 +135,19 @@ picture div a {
     transform: translateY(5vh);
 
     height: 8vh;
-    width: 20vw;
+    width: 7em;
 
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 
-    color: rgba(238, 237, 232, 0.678);
-    background-color: rgb(101, 108, 116);
-    border: none;
+    color: #eeede8;
+    border: 2px solid ;
     border-radius: 0.5em;
 }
 picture div a:hover{
-    color: rgb(238, 237, 232);
-    background-color: rgba(101, 108, 116, 0.842);
+    color: #eeede8;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ABOUT SECTION */
@@ -545,6 +544,114 @@ align-items: flex-end;
 
 
 
+/* Footer */
+
+footer {
+    min-height: 40vh;
+    width: 100vw;
+    background-color: #0f0909;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-first-section {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    height: 10vh;
+}
+
+.footer-menu {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #eeede8;
+    margin: 0 0.3em;
+}
+
+.footer-menu ul li a:hover{
+    color: #eeede89f;
+}
+
+.footer-contact{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact h4 {
+    color: #eeede8;
+    width: 20vw;
+}
+
+.footer-contact p {
+}
+
+.footer-contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact a {
+    width: 20vw;
+    color: #eeede8;
+    text-decoration: none;
+}
+
+footer hr {
+    width: 90vw;
+    margin: 0 auto;
+    border: none;
+    height: 0.05em;
+    background-color: #eeede8;
+}
+
+
+
+.built {
+    height: 4vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.built p, .built a {
+    color: #eeede8;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1024px){
 
     .serviciiTitle h1{
@@ -579,9 +686,7 @@ align-items: flex-end;
         font-size: 3.6em;
     }
 
-    .aboutMe p:nth-child(5){
-        font-size: 0.9em;
-    }
+ 
 
     .beneficii-text{
         margin: 0;
@@ -704,7 +809,6 @@ align-items: flex-end;
 
     picture div a{
         font-size: 1.2em;
-        width: 40vw;
         height: 6vh;
     }
 
@@ -862,7 +966,7 @@ align-items: flex-end;
     .beneficii-text h1{
         font-size: 2em;
         padding: 0;
-        margin: 4vh 0 4vh 0;
+        margin: 2vh 0 ;
     }
 
 
@@ -919,10 +1023,6 @@ align-items: flex-end;
     
     picture div h1 {
         font-size: 2.2em;
-    }
-
-    .aboutMe p:nth-child(3){
-        font-size: 0.9em;
     }
 
     .beneficii-text h1 {
