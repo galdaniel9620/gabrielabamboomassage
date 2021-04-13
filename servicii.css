@@ -10,11 +10,13 @@
 h1 {
     font-family: 'Lora', serif;
     color: #746661;
+    margin: 0;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     color: #746661;
+    margin: 0;
 }
 
 
@@ -148,7 +150,13 @@ section {
     flex-direction: column;
 }
 
-.preturi hr {
+
+.tip-masaj {
+    width: 70vw;
+    margin: 2vh 0;
+}
+
+.tip-masaj hr {
     background-color: #9ec568;
     height: 0.1em;
     border: none;
@@ -161,23 +169,163 @@ section {
     font-weight: 500;
 }
 
-.preturi p {
+.collapsible {
+    width: 70vw;
+    display: flex;
+
+}
+
+.collapsible-btn{
+    height: 8vh;
+    width: 10vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.line1{
+    height: 3px;
+    width: 20px;
+    background-color: #9ec568;
+}
+
+.line2{
+    height: 3px;
+    width: 20px;
+    background-color: #9ec568;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.collapsible p {
     font-size: 2em;
     width: 70vw;
-    text-align: end;
-    margin: 0 0 2vh 0;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
-.preturi div {
-    margin: 2vh 0;
-}
-
-.preturi div:hover p,.preturi div:hover h1 {
+.preturi div:hover h1 {
     color: #9ec568
 }
 
+.content {
+    margin: 4vh 0 2vh 0;
+    width: 70vw;
+    font-family: 'Lora', serif;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 1vh 0;
 
 
+}
+
+
+/* Footer */
+
+footer {
+    min-height: 40vh;
+    width: 100vw;
+    background-color: #0f0909;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-first-section {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    height: 10vh;
+}
+
+.footer-menu {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #eeede8;
+    margin: 0 0.3em;
+}
+
+.footer-menu ul li a:hover{
+    color: #eeede89f;
+}
+
+.footer-contact{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact h4 {
+    color: #eeede8;
+    width: 20vw;
+}
+
+.footer-contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact a {
+    width: 20vw;
+    color: #eeede8;
+    text-decoration: none;
+}
+
+footer hr {
+    width: 90vw;
+    margin: 0 auto;
+    border: none;
+    height: 0.05em;
+    background-color: #eeede8;
+}
+
+
+
+.built {
+    height: 4vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.built p, .built a {
+    color: #eeede8;
+    text-decoration: none;
+    
+}
 
 
 
@@ -208,10 +356,14 @@ section {
 
     .preturi p {
         font-size: 1.6em;
-        width: 80vw;
+        width: 90vw;
     }
 
-    .preturi div {
+    .tip-masaj {
+        width: 80vw;
+
+    }
+    .tip-masaj p {
         width: 80vw;
     }
 
@@ -227,6 +379,23 @@ section {
 
     header picture p {
         font-size: 4em
+    }
+
+    
+    .content {
+        margin: 2vh 0;
+        width: 80vw;
+    }
+
+    .content p{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .collapsible {
+        width: 80vw;
+        margin: 0;
+        padding: 0;
     }
 
 }
@@ -345,11 +514,10 @@ section {
     .preturi p {
         font-size: 1.3em;
         width: 80vw;
-        margin: 2vh 0;
     }
 
-    .preturi div {
-        width: 80vw;
+    .tip-masaj{
+        margin: 2vh 0;
     }
 
     .preturi hr {
@@ -359,6 +527,19 @@ section {
     header picture p {
         font-size: 3em;
         text-align: center;
+    }
+
+    .content {
+        margin: 1vh 0;
+        width: 80vw;
+    }
+
+    .content p {
+        font-size: 0.8em;
+    }
+
+    .collapsible-btn, .collapsible p {
+        height: 5vh;
     }
 
 }
@@ -382,6 +563,14 @@ section {
         padding: 0;
     }
 
+    .tip-masaj{
+        margin: 1vh 0;
+    }
+
+    .collapsible-btn, .collapsible p {
+        height: 5vh;
+    }
+
     .preturi {
         width: 90vw;
     }
@@ -394,15 +583,31 @@ section {
         font-size: 0.9em;
         width: 90vw;
         text-align: start;
-        margin-top: 10px;
     }
 
-    .preturi div {
-        width: 80vw;
-    }
 
     .preturi hr {
         width: 80vw;
+    }
+    
+    .content {
+        margin: 1vh 0;
+        width: 80vw;
+    }
+
+    .content p {
+        width: 80vw;
+        font-size: 0.7em;
+        margin: 0;
+    }
+
+    .line1{
+        width: 15px;
+        height: 2px;
+    }
+    .line2{
+        width: 15px;
+        height: 1.5px;
     }
 }
 
